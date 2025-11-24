@@ -48,5 +48,5 @@ Animal.belongsTo(User, { foreignKey: "userId" });
 
 Farm.hasMany(Animal, { foreignKey: "farmId", onDelete: "CASCADE" });
 Animal.belongsTo(Farm, { foreignKey: "farmId" });
-
+export { sequelize };
 export default { sequelize, User, Farm, Animal };
