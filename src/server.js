@@ -17,7 +17,7 @@ import { sequelize } from "./models/index.js";
 const app = express();
 
 app.use(cors({
-  origin: "http://localhost:5173",
+  origin: "frontendfarm.netlify.app",
   credentials: true,
 }));
 
